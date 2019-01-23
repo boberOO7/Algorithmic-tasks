@@ -18,7 +18,7 @@ public class RestoreArray {
 
     public static int[] restoring(int[] array) {
         int[] copiedArray = Arrays.copyOf(array, array.length);
-        for (int i = 0; i < copiedArray.length; i++) {
+        for (int i = 1; i < copiedArray.length - 1; i++) {
             if (copiedArray[i] < 0) {
                 copiedArray[i] = (copiedArray[i + 1] + copiedArray[i - 1]) / 2;
             }
