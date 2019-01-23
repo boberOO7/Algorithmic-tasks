@@ -18,7 +18,6 @@ public class ArrayRotation {
         System.out.println("Array after rotation: " + Arrays.toString(rotatedArray));
     }
 
-
     public static int[] rotation(int[] array, int k) {
         int[] copied = Arrays.copyOf(array, array.length);
         for (int i = 0; i < k; i++) {

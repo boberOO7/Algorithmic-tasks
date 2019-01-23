@@ -2,7 +2,6 @@ import java.lang.StringBuilder;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 public class Ranges {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -39,11 +38,11 @@ public class Ranges {
         return result;
     }
 
-    public static void longRange(StringBuilder result, int i, int k, int[] copiedArray){
+    private static void longRange(StringBuilder result, int i, int k, int[] copiedArray){
         result.append("[" + String.valueOf(copiedArray[i - k]) + " " + String.valueOf(copiedArray[i]) + "]");
     }
 
-    public static void shortRange(StringBuilder result, int i, int k, int[] copiedArray){
+    private static void shortRange(StringBuilder result, int i, int k, int[] copiedArray){
         result.append("[" + String.valueOf(copiedArray[i]) + "]");
     }
 }
